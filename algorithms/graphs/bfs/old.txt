@@ -1,0 +1,61 @@
+
+
+/*
+---------OLD TRY----------
+auto init = std::initializer_list<int>({{1,5}, {0, 4, 2}, {1, 3}, {2, 4, 7, 12}, {1, 3, 7, 5}, {0, 4, 7, 6 }, {5, 8, 11}, {5, 4, 3, 8}, {6, 7, 9}, {11, 12, 10, 8}, 9, {6, 9}, {3, 9}});
+   copy(init.begin(), init.end(), connections);
+   for(int t=0;t<=l-1;t++){
+        cout << "{";
+        for(int s=0;s<l2;s++){
+        cout << a[t][s] << " ; ";
+        }
+        cout << "}\n";
+    }
+    cout << "\n";
+int v;
+    bool already_there, change;
+    int vals[14][5] = {{6,2}, {1,5,3}, {2,4}, {3,5,11,8}, {2,4,8,6}, {1,5,8,7}, {6,8,9,13}, {6,7,9,5,4}, {8,7,12}, {11,12}, {4,10}, {10,9,13,14}, {7,12}, {12}};
+    int start = 5;
+    int finnish = 9; //have to do -1 since points are indexed from one but vals are indexed from 0
+    stacky[0][0] = start-1;
+    cout << stacky[0][0] << "\n";
+    for(int i = 0;true;i++){//stacky index
+        for(int o = 0;!change;o++){ //which number in stack to go through
+            cout << "stacky: " << stacky[i][o] << "\n";
+            if(stacky[i][o] == 0){break;}
+            else v = stacky[i][o];
+            cout << "{";
+            for(int l = 0;vals[v][l]!=0;l++){//scanning which val in vals(second[])
+                //replaceable as a function
+                already_there, change = false;
+                for(int k = 0;stacky[i-1][k]!=0; k++){//just making sure that there isnt the number in the array - for stack[i-1]
+                    if (stacky[i-1][k]==vals[v][l]-1){//minus one just because of the indexing
+                        already_there = true;
+                        break;
+                    }
+                }
+                for(int k = 0;stacky[i][k]!=0; k++){//just making sure that there isnt the number in the array - for stack[i]
+                    if (stacky[i][k]==vals[v][l]-1){//minus one just because of the indexing
+                        already_there = true;
+                        break;
+                    }
+                }
+                for(int k = 0;stacky[i+1][k]!=0; k++){//just making sure that there isnt the number in the array - for stack[i+1]
+                    if (stacky[i+1][k]==vals[v][l]-1){//minus one just because of the indexing
+                        already_there = true;
+                        break;
+                    }
+                }
+                //replaceble as a function
+                if(!already_there){stacky[i+1][l] = vals[v][l]-1;cout << vals[v][l]-1 << ", ";change=true;}
+
+
+            }
+            cout << "}\n";
+
+        }
+        cout << "yes";
+        change = false;
+    }
+-----------------------
+*/

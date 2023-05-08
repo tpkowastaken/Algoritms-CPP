@@ -1,0 +1,23 @@
+#########################################################################################################################################################
+#                                                                                                                                                       #
+#          soubor funguje na systému seznamu vrcholů spojených s danou hranou                                                                           #
+#          na prvním místě je počet vrcholů                                                                                                             #
+#          poté se vypíše s čím je vrchol s daným indexem spojený a jakou má délku                                                                      #
+#          pokud není s ničím spojený řádek musí být nahrazen N                                                                                         #
+#          příklad:                                                                                                                                     #
+#          6(počet vrcholů)                                                                                                                             #
+#          1(vrchol 0 je spojen s vrcholem 1) 50(vzdálenost 50) 5(vrchol 0 je spojen s vrcholem 5) 40 (se vzdáleností 40)# index je na tomto radku 0    #
+#          0(vrchol 1 je spojen s vrcholem 0) 50(vzdálenost 50) 4(vrchol 1 je spojen s vrcholem 4) 10 (se vzdáleností 10)# index je na tomto radku 1    #
+#                                                                                                                                                       #
+#########################################################################################################################################################
+10
+1 5
+6 60 2 20 5 30
+3 10 4 75
+2 -15
+9 100
+4 25 6 5 8 50
+7 -50
+8 -10
+N
+N

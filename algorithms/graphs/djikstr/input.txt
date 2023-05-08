@@ -1,0 +1,23 @@
+#########################################################################################################################################################
+#                                                                                                                                                       #
+#          soubor funguje na systému seznamu vrcholů spojených s danou hranou                                                                           #
+#          na prvním místě je počet vrcholů                                                                                                             #
+#          poté se vypíše s čím je vrchol s daným indexem spojený a jakou má délku                                                                      #
+#          a nakonec se za lomítko se doplní odkud kam chcete aby hledal nejrychlejší cestu                                                             #
+#          pokud není s ničím spojený řádek musí být nahrazen N                                                                                         #
+#          příklad:                                                                                                                                     #
+#          6(počet vrcholů)                                                                                                                             #
+#          1(vrchol 0 je spojen s vrcholem 1) 50(vzdálenost 50) 5(vrchol 0 je spojen s vrcholem 5) 40 (se vzdáleností 40)# index je na tomto radku 0    #
+#          0(vrchol 1 je spojen s vrcholem 0) 50(vzdálenost 50) 4(vrchol 1 je spojen s vrcholem 4) 10 (se vzdáleností 10)# index je na tomto radku 1    #
+#          /1 5 (od 1 do 5)                                                                                                                             #
+#          algoritmus funguje pouze s pozitivními integery                                                                                              #
+#                                                                                                                                                       #
+#########################################################################################################################################################
+6
+1 2 3 8 #index:0
+0 2 3 5 4 6 #index:1
+4 9 5 3 #index:2
+0 8 1 5 4 3 5 2 #index:3
+1 6 3 3 5 1 #index:4
+4 1 3 2 2 3 #index:5
+/1 5

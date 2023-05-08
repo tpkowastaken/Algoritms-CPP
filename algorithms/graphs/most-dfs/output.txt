@@ -1,0 +1,4 @@
+vypisování všech mostů: 
+nalezen most: 8 <-> 9
+nalezen most: 8 <-> 10
+nalezen most: 2 <-> 3

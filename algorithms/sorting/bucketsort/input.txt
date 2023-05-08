@@ -1,0 +1,4 @@
+-6 5 #range
+12 #number of inputs
+1 2 3 1 -4 -5 1 5 4 3 2 1 #numbers in which it should sort (you cannot comment on the next line)
+tom1 david2 martin3 krystof1 orangutan-4 uzivatel-5 jenda1 matej5 petr4 martin3 linda2 klara1
